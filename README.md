@@ -25,7 +25,7 @@ cd dia_organizado
 Rode o comando:
 
 ```
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 Depois é só rodar:
