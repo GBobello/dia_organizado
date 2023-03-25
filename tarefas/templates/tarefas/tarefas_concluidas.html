@@ -11,7 +11,7 @@
                 <button type="button" class="list-group-item list-group-item-success list-group-item-action" data-bs-toggle="modal"  data-bs-target="#modal{{ tarefa.id }}">
     
                     <h5>{{ tarefa.description }}</h5>
-                    <small>Criado em: {{ tarefa.created_at.day }}/{{ tarefa.created_at.month }}/{{ tarefa.created_at.year }}  </small>
+                    <small>Criado em: {{ tarefa.created_at|date:'d/M/Y H:m' }}  </small>
                 </button>
                 <!-- Modal -->
                 <div class="modal fade" id="modal{{ tarefa.id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
