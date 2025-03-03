@@ -1,0 +1,13 @@
+{
+    "builds": [{
+        "src": "dia_organizado/wsgi.py",
+        "use": "@vercel/python",
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.10.2" }
+    }],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "dia_organizado/wsgi.py"
+        }
+    ]
+}
